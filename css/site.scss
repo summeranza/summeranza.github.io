@@ -5,7 +5,6 @@
 @import "import/normalize"; 
 @import "import/flexslider"; 
 @import "import/fancybox";
-
 // apply a natural box layout model to all elements
 * {
 	@include box-sizing(border-box);

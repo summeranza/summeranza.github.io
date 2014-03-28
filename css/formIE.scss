@@ -1,0 +1,57 @@
+/* All Edits For Form Should be done here */
+
+
+.radioWrapper{ 
+  input[type="radio"] {
+   position:static;
+   opacity:1;  
+  } 
+  input[type="radio"]+label{
+    padding:0 0 0 10px;
+  }
+  input[type="radio"] + label:before {
+     display:none;
+  }
+  input[type="radio"]:checked + label:before {
+    background: none;
+    border: 0;
+  }  
+}
+
+.inner .thirdPart{  
+  input[type=checkbox] {  
+      display: inline;  
+  }   
+  .checkbox label {
+    display: inline;    
+  }
+  .checkbox label:before {
+    display: none;
+  }   
+  input[type=checkbox]:checked + label:before {
+    display: none;
+  } 
+}
+
+.gender-cont{
+  input[type="radio"] {
+   position:static;
+   opacity:1;  
+  }
+  input[type="radio"] + label {
+     position:relative;
+     padding: 0 0 0 12px;
+     font-size: 14px;
+     line-height:30px;
+     color:#000000;
+     font-family: Arial, Helvetica, sans-serif;
+  }
+  input[type="radio"] + label:before {
+     display:none;
+  }
+  input[type="radio"]:checked + label:before {
+    background: none;
+    border: 0;
+  }
+}
+
