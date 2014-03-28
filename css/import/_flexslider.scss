@@ -1,0 +1,38 @@
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+
+@include breakpoint(max-width 520px) {
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+}
+
+.gallery {margin: 0; padding: 0;}
+.gallery ul{margin:0; padding:0; list-style: none;}
+.gallery .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.gallery .slides img {width: 100%; display: block;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider, .gallery { margin: 0; border: 0; position: relative;  zoom: 1; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides, .flexslider .gallery{ zoom: 1; }
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0; margin:0; padding:0; list-style: none;}
+.flex-direction-nav a  { text-decoration:none; display: block; width: 60px; height: 86px; margin: -43px 0 0; position: absolute; top: 50%; z-index: 99; overflow: hidden; opacity: 1; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; text-indent: -9999px;}
+.flex-direction-nav .flex-prev { left: 0; background:url(../images/prevArrow.png) no-repeat; }
+.flex-direction-nav .flex-next { right: 0;  background:url(../images/nextArrow.png) no-repeat;}
+.flexslider:hover .flex-prev, .gallery:hover .flex-prev { opacity: 1;  }
+.flexslider:hover .flex-next, .gallery:hover .flex-next { opacity: 1;  }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover, .gallery:hover .flex-next:hover, .gallery:hover .flex-prev:hover { opacity: 0.9; }
+.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
+.flex-direction-nav a.flex-next:before  { content: '\f002'; }
