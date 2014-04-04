@@ -188,19 +188,25 @@ fieldset{
       z-index:999;
       background:url(../images/bg-selectbox.jpg) no-repeat right center #ffffff;
       border-radius: 3px;
-      select#CountryCode_Countries{
-        background: transparent;       
+      select#CountryCode_Countries{             
         width: 100%;
         padding: 6px 2px 6px 15px;
         color:#a2988a;  
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
         border: 1px solid #a2988a;
         font-size:13px;
         -webkit-appearance: none;
         border-radius: 3px;  
+        background:url(../images/bg-selectbox.jpg) no-repeat right center #ffffff; 
         line-height: 1.2;        
         &:hover, &:focus{
           color:#000000;
           border:1px solid #000000; 
+        }
+        &::-ms-expand {
+            display: none;
         } 
       } 
     }
@@ -228,11 +234,17 @@ fieldset{
       margin-right: 7px; 
       border: 1px solid #a2988a;
       -webkit-appearance: none;
+      -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
       border-radius: 3px;  
       &:hover, &:focus{
         color:#000000;
         border:1px solid #000000; 
       } 
+      &::-ms-expand {
+          display: none;
+      }
     }
   } 
 }
@@ -334,11 +346,17 @@ fieldset{
       font-size:13px;
       -webkit-appearance: none;
       border-radius: 3px;  
-      line-height: 1.2;        
+      line-height: 1.2;   
+      -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';     
       &:hover, &:focus{
         color:#000000;
         border:1px solid #000000; 
       } 
+      &::-ms-expand {
+          display: none;
+      }
     } 
   }
   &:hover, &:focus{
